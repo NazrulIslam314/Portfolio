@@ -5,27 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nazrul.me</title>
+    <!-- MainStyle.css -->
     <link rel="stylesheet" href="./dist/style.css" />
+    <!-- Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;500;700&family=Gulzar&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
-  <body class="container">
-    <!---------Nav-Section------------>
+  <body>
+    <!---------Nav-Section-start------------>
     <section class="navSection">
       <!--------- Nav-Left-Section------>
       <div class="navLeftSection">
         <a href="">
-          <span>Nazrul.me</span>
+          <span>Nazrul.me </span>
         </a>
       </div>
+      <!---------Nav-Menu-Btn------------>
+      <button class="menuBtn nav-toggler" data-target="#navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <!--------- Nav-Right-Section------>
-      <div class="navRightSection">
-        <a href="#"><span>Home</span></a>
-        <a href="#Services"><span>Services</span></a>
-        <a href="#About"><span>About</span></a>
-        <a href="#Contact"><span>Contact</span></a>
+      <div class="navRightSection top-navbar" id="navigation">
+        <a href="#" class="navItem">
+          <span>Home</span>
+        </a>
+        <a href="#Services" class="navItem">
+          <span>Services</span>
+        </a>
+        <a href="#About" class="navItem">
+          <span>About</span>
+        </a>
+        <a href="#Contact" class="navItem">
+          <span>Contact</span>
+        </a>
       </div>
     </section>
-
-
+    <!----------nav-Section-End------------>
+    <!----------Hero-Section-Start---------------->
+    <section class="heroSection">
+      <div class="heroCenter">
+        <h1>Hello WebDevoloper</h1>
+        <p>I am a WebDevoloper</p>
+      </div>
+    </section>
+    <!----------Hero-Section-End---------------->
+    <!----------1st-Section-Start---------------->
+    <section class="FirstSection">
+      <div class="webservices">
+        <div class="taitle">
+          <h1>
+            <i class="fa-brands fa-dev"></i>
+            webservices
+          </h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          quibusdam optio tenetur ab exercitationem vitae quas laborum similique
+          minus alias dicta, suscipit autem quasi quo veniam? Amet cum quas
+          reprehenderit!
+        </p>
+      </div>
+    </section>
+    <!-- JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Custom-JavaSrcript -->
     <script src="./dist/app.js"></script>
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </body>
 </html>

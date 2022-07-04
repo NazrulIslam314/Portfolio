@@ -1,12 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* nav-Section-Start */
 .navSection{
-    @apply bg-[#FB8604]
+    @apply bg-forst-yellow flex flex-wrap
 }
 .navLeftSection{
-    @apply text-2xl p-2
+    @apply text-2xl p-2 mr-4 inline-flex items-center
+}
+.menuBtn{
+    @apply p-3 ml-auto my-auto
 }
 .navRightSection{
-    @apply hidden
+    @apply hidden 
+}
+.navItem{
+    @apply text-slate-800 w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono
+}
+/* nav-Section-End */
+/* Hero-Section-start */
+.heroSection{
+    @apply flex bg-gradient-to-r from-[#000000] via-[#414141] to-[#000000] 
+}
+.heroCenter{
+    @apply py-24
+}
+.heroCenter>h1{
+    @apply text-forst-white text-center text-4xl font-mono uppercase font-medium
+}
+.heroCenter>p{
+    @apply text-center text-forst-white
+}
+/* Hero-Section-End */
+/* 1st-Section-Start*/
+.FirstSection{
+@apply bg-forst-white py-3 m-2
+}
+.taitle>h1{
+@apply text-center font-mono uppercase text-3xl text-forst-green
+}
+.taitle>h1>i{
+    @apply px-2
+}
+.webservices>p{
+    @apply p-5 font-mono text-center pt-2 text-sm
 }

@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Arima, cursive;
   /* 4 */
 }
 
@@ -123,7 +123,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Gulzar, serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -558,51 +558,119 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
+/* nav-Section-Start */
 
 .navSection {
+  display: flex;
+  flex-wrap: wrap;
   --tw-bg-opacity: 1;
   background-color: rgb(251 134 4 / var(--tw-bg-opacity));
 }
 
 .navLeftSection {
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
   padding: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+.menuBtn {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding: 0.75rem;
+}
+
 .navRightSection {
   display: none;
+}
+
+.navItem {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Gulzar, serif;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+/* nav-Section-End */
+
+/* Hero-Section-start */
+
+.heroSection {
+  display: flex;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #000000;
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(65 65 65 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #414141, var(--tw-gradient-to);
+  --tw-gradient-to: #000000;
+}
+
+.heroCenter {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.heroCenter>h1 {
+  text-align: center;
+  font-family: Gulzar, serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(212 247 236 / var(--tw-text-opacity));
+}
+
+.heroCenter>p {
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(212 247 236 / var(--tw-text-opacity));
+}
+
+/* Hero-Section-End */
+
+/* 1st-Section-Start*/
+
+.FirstSection {
+  margin: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 247 236 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.taitle>h1 {
+  text-align: center;
+  font-family: Gulzar, serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(68 141 118 / var(--tw-text-opacity));
+}
+
+.taitle>h1>i {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.webservices>p {
+  padding: 1.25rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: Gulzar, serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }

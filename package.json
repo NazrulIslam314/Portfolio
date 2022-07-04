@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/NazrulIslam314/Portfolio/issues"
   },
-  "homepage": "https://github.com/NazrulIslam314/Portfolio#readme"
+  "homepage": "https://github.com/NazrulIslam314/Portfolio#readme",
+  "dependencies": {
+    "feather-icons": "^4.29.0"
+  }
 }
