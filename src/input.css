@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navSection{
+    @apply bg-[#FB8604]
+}
+.navLeftSection{
+    @apply text-2xl p-2
+}
+.navRightSection{
+    @apply hidden
+}

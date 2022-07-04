@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal Portfolio",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazrulIslam314/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazrulIslam314/Portfolio/issues"
+  },
+  "homepage": "https://github.com/NazrulIslam314/Portfolio#readme"
+}
