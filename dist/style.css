@@ -558,6 +558,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.flex {
+  display: flex;
+}
+
 /* nav-Section-Start */
 
 .navSection {
@@ -644,11 +648,14 @@ video {
 /* 1st-Section-Start*/
 
 .FirstSection {
-  margin: 0.5rem;
+  display: flex;
+}
+
+.webservices {
+  height: 16rem;
+  width: 18rem;
   --tw-bg-opacity: 1;
   background-color: rgb(212 247 236 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .taitle>h1 {
@@ -667,7 +674,7 @@ video {
 }
 
 .webservices>p {
-  padding: 1.25rem;
+  padding: 2.25rem;
   padding-top: 0.5rem;
   text-align: center;
   font-family: Gulzar, serif;

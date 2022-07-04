@@ -33,8 +33,11 @@
 }
 /* Hero-Section-End */
 /* 1st-Section-Start*/
-.FirstSection{
-@apply bg-forst-white py-3 m-2
+.flexBox{
+@apply flex flex-row
+}
+.webservices{
+    @apply bg-forst-white w-72 h-64 p
 }
 .taitle>h1{
 @apply text-center font-mono uppercase text-3xl text-forst-green
@@ -43,5 +46,5 @@
     @apply px-2
 }
 .webservices>p{
-    @apply p-5 font-mono text-center pt-2 text-sm
+    @apply p-9 font-mono text-center pt-2 text-sm
 }
