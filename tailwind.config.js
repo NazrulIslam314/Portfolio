@@ -17,6 +17,9 @@ module.exports = {
         'forst-blue': '#2E2FE3',
         'forst-drak': '#090934',
       },
+      height: {
+        '80screen': '80vh',
+      }
     },
   },
   plugins: [],

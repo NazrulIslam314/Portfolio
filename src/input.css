@@ -9,7 +9,7 @@
     @apply text-2xl p-2 mr-4 inline-flex items-center
 }
 .menuBtn{
-    @apply p-3 ml-auto my-auto
+    @apply p-3 ml-auto my-auto text-3xl
 }
 .navRightSection{
     @apply hidden 
@@ -20,31 +20,51 @@
 /* nav-Section-End */
 /* Hero-Section-start */
 .heroSection{
-    @apply flex bg-gradient-to-r from-[#000000] via-[#414141] to-[#000000] 
+    @apply bg-gradient-to-r from-[#000000] via-[#414141] to-[#000000] 
 }
-.heroCenter{
-    @apply py-24
+.center{
+@apply flex h-80screen items-center justify-center text-center
+  
 }
 .heroCenter>h1{
-    @apply text-forst-white text-center text-4xl font-mono uppercase font-medium
+    @apply text-forst-white text-4xl font-mono uppercase font-medium
 }
 .heroCenter>p{
-    @apply text-center text-forst-white
+    @apply  text-forst-white text-sm
 }
 /* Hero-Section-End */
 /* 1st-Section-Start*/
 .flexBox{
-@apply flex flex-row
+@apply flex flex-col
 }
-.webservices{
-    @apply bg-forst-white w-72 h-64 p
+.heading{
+  @apply text-center text-4xl my-2
 }
-.taitle>h1{
-@apply text-center font-mono uppercase text-3xl text-forst-green
+.flexItem{
+  @apply bg-forst-white w-full h-72 items-center text-center mt-4
 }
-.taitle>h1>i{
+.webservices>h1{
+@apply pt-2  font-mono uppercase text-3xl text-forst-green 
+}
+.webservices>h1>i{
     @apply px-2
 }
 .webservices>p{
-    @apply p-9 font-mono text-center pt-2 text-sm
+    @apply p-9 font-mono  pt-2 text-sm
+}
+.span{
+  @apply border-t-2 border-forst-yellow pt-1
+}
+/*skill*/
+.html{
+  @apply bg-forst-yellow flex justify-center
+}
+.htmlIcon{
+  @apply text-4xl
+}
+.htmlBar{
+@apply w-4/5 border-t-8 border-forst-green mt-3
+}
+.htmlText{
+  @apply text-xl mt-3
 }
