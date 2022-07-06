@@ -19,6 +19,11 @@ module.exports = {
       },
       height: {
         '80screen': '80vh',
+        '90screen': '90vh',
+      },
+      width: {
+        '80screen': '80wh',
+        '90screen': '90wh',
       }
     },
   },

@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+  @apply scroll-smooth
+}
 /* nav-Section-Start */
 .navSection{
     @apply bg-forst-yellow flex flex-wrap
@@ -38,7 +41,7 @@
 @apply flex flex-col
 }
 .heading{
-  @apply text-center text-4xl my-2
+  @apply text-center text-4xl my-2 bg-black
 }
 .flexItem{
   @apply bg-forst-white w-full h-72 items-center text-center mt-4
@@ -67,4 +70,33 @@
 }
 .htmlText{
   @apply text-xl mt-3
+}
+/* card */
+.cardflex{
+  @apply flex bg-black justify-center items-center flex-col
+}
+.cardSection{
+  @apply w-96 bg-gray-50 mt-5 items-center text-center rounded-xl 
+}
+.img>img{
+  @apply w-full h-60 rounded-xl aspect-video
+}
+.img::after{
+  @apply w-full h-2 bg-black
+}
+.textArea>h1{
+  @apply py-3 text-3xl font-mono text-orange-600
+}
+.textArea>p{
+  @apply pb-5 font-sans text-sm text-gray-500 px-4
+}
+.display{
+  @apply w-full h-20 bg-orange-600 rounded-b-xl flex
+  items-center justify-between px-7
+}
+.display>div>h1{
+  @apply text-xl text-white font-sans
+}
+.display>div>p{
+  @apply text-sm text-slate-200 font-mono
 }
