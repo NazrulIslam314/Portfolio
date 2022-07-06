@@ -566,8 +566,18 @@ video {
   display: contents;
 }
 
+/* Global */
+
 html {
   scroll-behavior: smooth;
+}
+
+.heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 /* nav-Section-Start */
@@ -638,7 +648,7 @@ html {
   text-align: center;
 }
 
-.heroCenter>h1 {
+.heroCenter > h1 {
   font-family: Gulzar, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -648,7 +658,7 @@ html {
   color: rgb(212 247 236 / var(--tw-text-opacity));
 }
 
-.heroCenter>p {
+.heroCenter > p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -664,16 +674,6 @@ html {
   flex-direction: column;
 }
 
-.heading {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  text-align: center;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .flexItem {
   margin-top: 1rem;
   height: 18rem;
@@ -684,7 +684,7 @@ html {
   text-align: center;
 }
 
-.webservices>h1 {
+.webservices > h1 {
   padding-top: 0.5rem;
   font-family: Gulzar, serif;
   font-size: 1.875rem;
@@ -694,12 +694,12 @@ html {
   color: rgb(68 141 118 / var(--tw-text-opacity));
 }
 
-.webservices>h1>i {
+.webservices > h1 > i {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.webservices>p {
+.webservices > p {
   padding: 2.25rem;
   padding-top: 0.5rem;
   font-family: Gulzar, serif;
@@ -763,21 +763,14 @@ html {
   text-align: center;
 }
 
-.img>img {
+.img > img {
   aspect-ratio: 16 / 9;
   height: 15rem;
   width: 100%;
   border-radius: 0.75rem;
 }
 
-.img::after {
-  height: 0.5rem;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.textArea>h1 {
+.textArea > h1 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-family: Gulzar, serif;
@@ -787,7 +780,7 @@ html {
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
-.textArea>p {
+.textArea > p {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1.25rem;
@@ -812,7 +805,7 @@ html {
   padding-right: 1.75rem;
 }
 
-.display>div>h1 {
+.display > div > h1 {
   font-family: Arima, cursive;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -820,7 +813,7 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.display>div>p {
+.display > div > p {
   font-family: Gulzar, serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
