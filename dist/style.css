@@ -562,10 +562,6 @@ video {
   display: flex;
 }
 
-.contents {
-  display: contents;
-}
-
 /* Global */
 
 html {
@@ -845,20 +841,31 @@ body {
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+  text-transform: uppercase;
 }
 
 .display>div>h1 {
   font-family: Arima, cursive;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .display>div>p {
-  font-family: Gulzar, serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.Row-3>div>h1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.Row-3>div>p {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
