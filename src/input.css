@@ -31,7 +31,7 @@ body {
 /* nav-Section-End */
 /* Hero-Section-start */
 .heroSection {
-  @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f]
+  @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
 }
 .center {
   @apply flex h-80screen items-center justify-center text-center;
@@ -123,44 +123,49 @@ body {
 /* card end */
 /* contact */
 .contactflex {
-  @apply bg-gray-100 
+  @apply bg-indigo-600 text-gray-200 px-5 py-10
 }
-.form {
-  @apply font-mono
+.input {
+  @apply w-full h-10 rounded-sm
+   placeholder:text-center bg-gray-100 placeholder:text-gray-400
 }
-.form > input {
-  @apply shadow
+.textArea{
+  @apply w-full rounded-sm
+  placeholder:text-center bg-gray-100 placeholder:text-gray-400
 }
-.form > h1 {
-  @apply block text-gray-700 text-sm font-bold mb-2
+.form > div > h1{
+  @apply text-xl 
+}
+.form > button {
+  @apply bg-orange-700 hover:bg-orange-400 w-full h-10 my-5
 }
 /* contactEnd */
 /* Footer */
-.footerflex{
-  @apply bg-gradient-to-tr from-[#fe7557] via-[#fd4e27] to-[#fd3a0f]
+.footerflex {
+  @apply bg-gradient-to-tr from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
 }
-.footerCenterSection{
-  @apply flex text-center w-full justify-center font-mono text-4xl py-5 
+.footerCenterSection {
+  @apply flex text-center w-full justify-center font-mono text-4xl py-5;
 }
-.footerNavLeft{
-  @apply justify-start text-center
+.footerNavLeft {
+  @apply justify-start text-center;
 }
-.footerNavLeft>h1{
-  @apply text-2xl
+.footerNavLeft > h1 {
+  @apply text-2xl;
 }
-.footerNavLeft>a{
-  @apply m-0 p-2 text-xl text-center
+.footerNavLeft > a {
+  @apply m-0 p-2 text-xl text-center;
 }
-.footerNavRight{
-  @apply justify-end text-center
+.footerNavRight {
+  @apply justify-end text-center;
 }
-.footerNavRight{
-  @apply w-fit h-fit overflow-hidden
+.footerNavRight {
+  @apply w-fit h-fit overflow-hidden;
 }
-.footerNavRight{
-  @apply text-xl font-mono text-gray-700
+.footerNavRight {
+  @apply text-xl font-mono text-gray-700;
 }
 /* Copyright */
-.copyright{
-  @apply text-center bg-slate-700 m-0  p-0 
+.copyright {
+  @apply text-center bg-slate-700 text-white;
 }
