@@ -16,6 +16,11 @@ module.exports = {
         'forst-yellow': '#FB8604',
         'forst-blue': '#2E2FE3',
         'forst-drak': '#090934',
+        'forst-white-50': '#D4DAF7',
+        'forst-orange': '#FD3A0F',
+        'forst-yellow-50': '#E4F132',
+        'forst-blue-50': '#183BF0',
+        'forst-drak-red': '#341109',
       },
       height: {
         '80screen': '80vh',

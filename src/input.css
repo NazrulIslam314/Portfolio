@@ -2,99 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 /* Global */
-html {
-  @apply scroll-smooth;
+html{
+  @apply scroll-smooth
 }
-.heading {
-  @apply text-center text-4xl my-2;
+body{
+  @apply bg-gray-100
+}
+.heading{
+  @apply text-center text-4xl text-gray-50 py-5
+  bg-gradient-to-l from-indigo-700 via-indigo-800 to-indigo-900
 }
 /* nav-Section-Start */
-.navSection {
-  @apply bg-forst-yellow flex flex-wrap;
+.navSection{
+    @apply bg-orange-500 flex flex-wrap text-forst-drak-red
 }
-.navLeftSection {
-  @apply text-2xl p-2 mr-4 inline-flex items-center;
+.navLeftSection{
+    @apply text-2xl p-2 mr-4 inline-flex items-center
 }
-.menuBtn {
-  @apply p-3 ml-auto my-auto text-3xl;
+.menuBtn{
+    @apply p-3 ml-auto my-auto text-3xl
 }
-.navRightSection {
-  @apply hidden;
+.navRightSection{
+    @apply hidden 
 }
-.navItem {
-  @apply text-slate-800 w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
+.navItem{
+    @apply text-slate-800 w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono
 }
 /* nav-Section-End */
 /* Hero-Section-start */
-.heroSection {
-  @apply bg-gradient-to-r from-[#000000] via-[#414141] to-[#000000];
+.heroSection{
+     @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f]  
 }
-.center {
-  @apply flex h-80screen items-center justify-center text-center;
+.center{
+@apply flex h-80screen items-center justify-center text-center
+  
 }
-.heroCenter > h1 {
-  @apply text-forst-white text-4xl font-mono uppercase font-medium;
+.heroCenter>h1{
+    @apply text-forst-white text-4xl font-mono uppercase font-medium
 }
-.heroCenter > p {
-  @apply text-forst-white text-sm;
+.heroCenter>p{
+    @apply  text-forst-yellow-50 text-sm
 }
 /* Hero-Section-End */
 /* 1st-Section-Start*/
-.flexBox {
-  @apply flex flex-col;
+.flexBox{
+@apply flex flex-col px-5 bg-gray-300
 }
 
-.flexItem {
-  @apply bg-forst-white w-full h-72 items-center text-center mt-4;
+.flexItem{
+  @apply py-8 bg-gray-200 rounded-xl justify-center items-center text-center  
 }
-.webservices > h1 {
-  @apply pt-2  font-mono uppercase text-3xl text-forst-green;
+.Item-1{
+  @apply mt-3
 }
-.webservices > h1 > i {
-  @apply px-2;
+.Item-2{
+  @apply mt-4
 }
-.webservices > p {
-  @apply p-9 font-mono  pt-2 text-sm;
+.Item-3{
+  @apply mt-4 mb-3
 }
-.span {
-  @apply border-t-2 border-forst-yellow pt-1;
+.webservices{
+  @apply justify-center items-center
+}
+.webservices>h1{
+@apply pt-2  font-mono uppercase text-3xl text-orange-600 
+}
+.webservices>h1>i{
+    @apply px-2
+}
+.webservices>p{
+    @apply px-9 font-mono  pt-2 text-sm text-gray-600
+}
+.span{
+  @apply border-t-2 border-forst-yellow pt-1
 }
 /*skill*/
-.html {
-  @apply bg-forst-yellow flex justify-center;
+.html{
+  @apply bg-forst-yellow flex justify-center
 }
-.htmlIcon {
-  @apply text-4xl;
+.htmlIcon{
+  @apply text-4xl
 }
-.htmlBar {
-  @apply w-4/5 border-t-8 border-forst-green mt-3;
+.htmlBar{
+@apply w-4/5 border-t-8 border-forst-green mt-3
 }
-.htmlText {
-  @apply text-xl mt-3;
+.htmlText{
+  @apply text-xl mt-3
 }
 /* card */
-.cardflex {
-  @apply flex bg-black justify-center items-center flex-col;
+.cardflex{
+  @apply flex justify-center items-center flex-col
 }
-.cardSection {
-  @apply w-96 bg-gray-50 mt-5 items-center text-center rounded-xl;
+.cardSection{
+  @apply w-96 bg-gray-200 mt-5 items-center text-center rounded-xl 
 }
-.img > img {
-  @apply w-full h-60 rounded-xl aspect-video;
+.img>img{
+  @apply w-full h-60 rounded-t-xl p-1 aspect-video
 }
-.textArea > h1 {
-  @apply py-3 text-3xl font-mono text-orange-600;
+.textArea>h1{
+  @apply py-3 text-3xl font-mono text-orange-600
 }
-.textArea > p {
-  @apply pb-5 font-sans text-sm text-gray-500 px-4;
+.textArea>p{
+  @apply pb-5 font-sans text-sm text-gray-500 px-4
 }
-.display {
+.display{
   @apply w-full h-20 bg-orange-600 rounded-b-xl flex
-  items-center justify-between px-7;
+  items-center justify-between px-7
 }
-.display > div > h1 {
-  @apply text-xl text-white font-sans;
+.display>div>h1{
+  @apply text-xl text-white font-sans
 }
-.display > div > p {
-  @apply text-sm text-slate-200 font-mono;
+.display>div>p{
+  @apply text-sm text-slate-200 font-mono
 }
