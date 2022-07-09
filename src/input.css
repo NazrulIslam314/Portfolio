@@ -144,7 +144,7 @@ body {
   @apply bg-indigo-500 text-gray-50 px-5 pt-5 relative overflow-hidden md:px-0;
 }
 .circle {
-  @apply w-64 h-64 bg-indigo-800 rounded-full  absolute z-10;
+  @apply w-96 h-96 bg-indigo-900 rounded-full  absolute z-10;
 }
 .Top {
   @apply -right-32 -top-32;

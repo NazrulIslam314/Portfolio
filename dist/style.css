@@ -1083,11 +1083,11 @@ body {
 .circle {
   position: absolute;
   z-index: 10;
-  height: 16rem;
-  width: 16rem;
+  height: 24rem;
+  width: 24rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(55 48 163 / var(--tw-bg-opacity));
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
 }
 
 .Top {
