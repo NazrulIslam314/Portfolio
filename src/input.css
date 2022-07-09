@@ -6,7 +6,7 @@ html {
   @apply scroll-smooth;
 }
 body {
-  @apply bg-gray-200 text-gray-50
+  @apply bg-gray-200 text-gray-50;
 }
 .heading {
   @apply text-center text-4xl text-gray-50 py-5
@@ -26,7 +26,7 @@ body {
   @apply hidden;
 }
 .navItem {
-  @apply  w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
+  @apply w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
 }
 /* nav-Section-End */
 /* Hero-Section-start */
@@ -34,13 +34,13 @@ body {
   @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
 }
 .center {
-  @apply flex h-80screen items-center justify-center text-center relative z-20
+  @apply flex h-80screen items-center justify-center text-center relative z-20;
 }
-.heroCenter{
-  @apply relative z-20
+.heroCenter {
+  @apply relative z-20;
 }
 .heroCenter > h1 {
-  @apply text-forst-white text-4xl font-mono uppercase font-medium 
+  @apply text-forst-white text-4xl font-mono uppercase font-medium;
 }
 .heroCenter > p {
   @apply text-forst-yellow-50 text-sm;
@@ -98,8 +98,8 @@ body {
   @apply w-full h-20 bg-orange-600 rounded-b-xl flex
   items-center justify-between px-7 uppercase;
 }
-.display>div {
-  @apply border-l-2 border-black
+.display > div {
+  @apply border-l-2 border-black;
 }
 .display > div > h1 {
   @apply text-xl text-white font-sans font-medium;
@@ -116,46 +116,46 @@ body {
 /* card end */
 /* contact */
 .contactflex {
-  @apply bg-indigo-700 text-gray-200 px-5 py-5 relative overflow-hidden
+  @apply bg-indigo-700 text-gray-200 px-5 py-5 relative overflow-hidden;
 }
-.circle{
-  @apply w-64 h-64 bg-forst-yellow rounded-full  absolute z-10
+.circle {
+  @apply w-64 h-64 bg-forst-yellow rounded-full  absolute z-10;
 }
-.Top{
-  @apply -right-32 -top-32
+.Top {
+  @apply -right-32 -top-32;
 }
-.Bottom{
-  @apply -left-32 -bottom-32 bg-forst-green
+.Bottom {
+  @apply -left-32 -bottom-32 bg-forst-green;
 }
-.stats{
-  @apply uppercase text-center text-5xl z-20 relative text-forst-white
-} 
-.ring-3{
-  @apply  hover:outline-none focus:outline-none focus:ring-4 focus:ring-forst-green
+.stats {
+  @apply uppercase text-center text-5xl z-20 relative text-forst-white;
+}
+.ring-3 {
+  @apply hover:outline-none focus:outline-none focus:ring-4 focus:ring-forst-green;
 }
 .input {
   @apply w-full h-10 rounded-b-xl
-   placeholder:text-center bg-gray-100 placeholder:text-gray-400 text-black p-7 shadow-xl shadow-red-700
+   placeholder:text-center bg-gray-100 placeholder:text-gray-400 text-black p-7 shadow-xl shadow-red-700;
 }
-.formtextArea{
-  @apply w-full rounded-sm placeholder:text-center bg-gray-100 placeholder:text-gray-400 placeholder:items-center 
+.formtextArea {
+  @apply w-full rounded-sm placeholder:text-center bg-gray-100 placeholder:text-gray-400 placeholder:items-center;
 }
-.form{
-  @apply z-20 relative text-center
+.form {
+  @apply z-20 relative text-center;
 }
-.form >div{
-  @apply  my-10 
+.form > div {
+  @apply my-10;
 }
-.form > div > h1{
-  @apply text-xl bg-forst-orange rounded-t-xl py-3
+.form > div > h1 {
+  @apply text-xl bg-forst-orange rounded-t-xl py-3;
 }
 .form > button {
-  @apply uppercase bg-forst-orange hover:bg-orange-400 w-full h-10 my-5
+  @apply uppercase bg-forst-orange hover:bg-orange-400 w-full h-10 my-5;
 }
 /* contactEnd */
 /* Footer */
 .footerflex {
-  @apply bg-gradient-to-tr from-[#fe7557]/90 via-[#fd4e27]/90 to-[#fd3a0f]/90 ;
+  @apply bg-gradient-to-tr from-[#fe7557]/90 via-[#fd4e27]/90 to-[#fd3a0f]/90;
 }
 .footerCenterSection {
   @apply flex text-center w-full justify-center font-mono text-4xl py-5;
@@ -172,13 +172,13 @@ body {
 .footerNavRight {
   @apply justify-end text-center w-fit h-fit overflow-hidden text-xl font-mono px-5;
 }
-.footerNavRight>p{
-  @apply text-xs px-3 
+.footerNavRight > p {
+  @apply text-xs px-3;
 }
 /* Copyright */
-.copyright{
+.copyright {
   @apply text-center bg-slate-700 text-white text-xs py-2;
 }
-.black{
- @apply bg-black h-10
+.black {
+  @apply bg-black h-10;
 }
