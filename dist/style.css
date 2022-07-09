@@ -589,7 +589,7 @@ body {
 
 .navSection {
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -847,6 +847,7 @@ body {
 /* card */
 
 .cardflex {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -860,6 +861,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .cardflex {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardflex {
+    justify-content: center;
+  }
+}
+
 .cardSection {
   margin-top: 1.25rem;
   width: 24rem;
@@ -868,6 +884,9 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
@@ -882,6 +901,80 @@ body {
 @media (min-width: 1024px) {
   .cardSection {
     width: 24rem;
+  }
+
+  .cardItem-1 {
+    z-index: 50;
+    margin: 0px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .cardItem-1:hover {
+    z-index: 50;
+    --tw-translate-y: -2.5rem;
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardItem-1 {
+    --tw-translate-x: -25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardItem-2 {
+    position: absolute;
+    z-index: 40;
+    margin-top: 0px;
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .cardItem-2:hover {
+    z-index: 50;
+    --tw-translate-y: -2.5rem;
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardItem-2 {
+    --tw-translate-x: 25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardItem-3 {
+    position: absolute;
+    z-index: 30;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    margin-top: 0px;
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .cardItem-3:hover {
+    z-index: 40;
+    --tw-translate-y: -2.5rem;
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardItem-3 {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
@@ -964,6 +1057,10 @@ body {
 
 /* contact */
 
+.contactSection {
+  margin-top: 1.25rem;
+}
+
 .contactflex {
   position: relative;
   overflow: hidden;
@@ -972,9 +1069,15 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .contactflex {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .circle {
@@ -1054,6 +1157,14 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .ring-3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .input {
   height: 2.5rem;
   border-bottom-right-radius: 0.75rem;
@@ -1079,12 +1190,29 @@ body {
 .form {
   position: relative;
   z-index: 20;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form > div {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .form > div {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
 .form > div > h1 {
@@ -1113,6 +1241,15 @@ body {
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 768px) {
+  .form > button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 2.5rem;
+    width: 16rem;
+  }
+}
+
 /* contactEnd */
 
 /* Footer */
@@ -1135,6 +1272,7 @@ body {
 }
 
 .footerNavLeft {
+  width: 50%;
   justify-content: flex-start;
   text-align: center;
 }
@@ -1146,6 +1284,7 @@ body {
 
 .footerNavLeft > a {
   margin: 0px;
+  display: block;
   padding: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
@@ -1156,9 +1295,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 50%;
   justify-content: flex-end;
   overflow: hidden;
   padding-left: 1.25rem;

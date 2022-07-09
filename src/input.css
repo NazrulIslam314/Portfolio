@@ -14,7 +14,7 @@ body {
 }
 /* nav-Section-Start */
 .navSection {
-  @apply bg-indigo-600 lg:px-48;
+  @apply bg-indigo-700 lg:px-48;
 }
 .navContainer {
   @apply p-3 flex items-center flex-wrap;
@@ -89,13 +89,26 @@ body {
 }
 /* card */
 .cardflex {
-  @apply flex justify-center items-center flex-col md:flex-row md:flex-wrap;
+  @apply flex justify-center items-center flex-col relative md:flex-row md:flex-wrap lg:flex-nowrap lg:mx-7 lg:justify-start xl:justify-center;
 }
 .cardSection {
-  @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:mx-5 md:w-80 lg:w-96;
+  @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:mx-5 md:w-80 lg:w-96 transition-all duration-500 ;
+}
+.cardItem-1{
+  @apply lg:m-0 lg:mx-20  lg:hover:-translate-y-10 lg:z-50 lg:hover:z-50 lg:hover:scale-105
+  xl:-translate-x-1/4
+}
+.cardItem-2{
+  @apply lg:mt-0 lg:absolute lg:translate-x-1/2 lg:hover:-translate-y-10 lg:z-40 lg:hover:z-50 lg:hover:scale-105
+  xl:translate-x-1/4 
+}
+.cardItem-3{
+  @apply lg:mx-96  lg:mt-0 lg:absolute lg:translate-x-1/2 lg:hover:-translate-y-10 lg:z-30 
+  hover:lg:z-40  lg:hover:scale-105
+  xl:-translate-x-1/2
 }
 .img > img {
-  @apply w-full h-60 rounded-t-xl  aspect-video;
+  @apply w-full h-60  rounded-t-xl  aspect-video;
 }
 .textArea > h1 {
   @apply py-3 text-3xl font-mono text-indigo-600;
@@ -124,8 +137,11 @@ body {
 }
 /* card end */
 /* contact */
+.contactSection{
+  @apply mt-5
+}
 .contactflex {
-  @apply bg-indigo-500 text-gray-50 px-5 py-5 relative overflow-hidden;
+  @apply bg-indigo-500 text-gray-50 px-5 pt-5 relative overflow-hidden md:px-0;
 }
 .circle {
   @apply w-64 h-64 bg-indigo-800 rounded-full  absolute z-10;
@@ -140,25 +156,25 @@ body {
   @apply uppercase text-center text-5xl z-20 relative;
 }
 .ring-3 {
-  @apply border-slate-200 placeholder-black contrast-more:border-slate-400 contrast-more:placeholder-black text-black placeholder:text-center w-full;
+  @apply border-slate-200 placeholder-black contrast-more:border-slate-400 contrast-more:placeholder-black text-black placeholder:text-center w-full md:w-fit;
 }
 .input {
   @apply  h-10 rounded-b-xl bg-gray-100  p-7 shadow-md shadow-indigo-500 ;
 }
 .formtextArea {
-  @apply  rounded-sm  px-7 py-2 ;
+  @apply  rounded-sm px-7 py-2 ;
 }
 .form {
-  @apply z-20 relative text-center;
+  @apply z-20 relative text-center md:flex md:flex-row md:flex-wrap justify-center items-center;
 }
 .form > div {
-  @apply my-10;
+  @apply my-10 md:mx-2 ;
 }
 .form > div > h1 {
   @apply text-xl bg-indigo-800 rounded-t-xl py-3;
 }
 .form > button {
-  @apply uppercase bg-indigo-900 hover:bg-orange-400 w-full h-10 my-3;
+  @apply uppercase bg-indigo-900 hover:bg-orange-400 w-full h-10 my-3 md:w-64 md:mb-10 md:my-0 ;
 }
 /* contactEnd */
 /* Footer */
@@ -169,16 +185,16 @@ body {
   @apply flex text-center w-full justify-center font-mono text-4xl py-5;
 }
 .footerNavLeft {
-  @apply justify-start text-center;
+  @apply justify-start text-center w-1/2;
 }
 .footerNavLeft > h1 {
-  @apply text-xl;
+  @apply text-xl ;
 }
 .footerNavLeft > a {
-  @apply m-0 p-2 text-sm text-center;
+  @apply m-0 p-2 text-sm text-center block;
 }
 .footerNavRight {
-  @apply justify-end text-center w-fit h-fit overflow-hidden text-xl font-mono px-5;
+  @apply justify-end text-center w-1/2 h-fit overflow-hidden text-xl font-mono px-5 ;
 }
 .footerNavRight > p {
   @apply text-xs px-3 leading-loose text-gray-300;
