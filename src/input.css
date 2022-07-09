@@ -6,32 +6,41 @@ html {
   @apply scroll-smooth;
 }
 body {
-  @apply bg-gray-200 text-gray-50;
+  @apply bg-gray-200 text-gray-50 ;
 }
 .heading {
-  @apply text-center text-4xl text-gray-50 py-5
-  bg-gradient-to-l from-indigo-700 via-indigo-800 to-indigo-900;
+  @apply text-center text-4xl text-black py-5
+  /* bg-gradient-to-l from-indigo-700 via-indigo-800 to-indigo-900; */
 }
 /* nav-Section-Start */
 .navSection {
-  @apply bg-orange-500 flex flex-wrap;
+  @apply bg-indigo-600 lg:px-48;
 }
-.navLeftSection {
-  @apply text-2xl p-2 mr-4 inline-flex items-center;
+.navContainer {
+  @apply p-3 flex items-center flex-wrap;
+}
+.logoSection {
+  @apply p-2 mr-4 inline-flex items-center;
+}
+.logo {
+  @apply text-xl font-mono tracking-wide;
 }
 .menuBtn {
-  @apply p-3 ml-auto my-auto text-3xl;
+  @apply p-3 inline-flex ml-auto outline-none rounded hover:bg-indigo-900 hover:text-white lg:hidden ;
 }
-.navRightSection {
-  @apply hidden;
+.navRight {
+  @apply w-full hidden lg:inline-flex lg:flex-grow lg:w-auto;
+}
+.navDiv {
+  @apply w-full items-start flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center  lg:h-auto;
 }
 .navItem {
-  @apply w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
+  @apply w-full px-3 py-2 rounded items-center justify-center hover:bg-indigo-900 hover:text-white lg:inline-flex lg:w-auto;
 }
 /* nav-Section-End */
 /* Hero-Section-start */
 .heroSection {
-  @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
+  @apply text-black uppercase bg-gradient-to-tr from-gray-100 via-gray-200 to-gray-300;
 }
 .center {
   @apply flex h-80screen items-center justify-center text-center relative z-20;
@@ -40,34 +49,34 @@ body {
   @apply relative z-20;
 }
 .heroCenter > h1 {
-  @apply text-forst-white text-4xl font-mono uppercase font-medium;
+  @apply  text-4xl font-mono font-medium;
 }
 .heroCenter > p {
-  @apply text-forst-yellow-50 text-sm;
+  @apply  text-sm;
 }
 /* Hero-Section-End */
 /* 1st-Section-Start*/
 .flexBox {
-  @apply flex flex-col px-5;
+  @apply flex flex-col px-5 lg:flex-row;
 }
 
 .flexItem {
   @apply py-8 bg-white/50 rounded-xl justify-center items-center text-center;
 }
 .Item-1 {
-  @apply mt-3;
+  @apply mt-3 lg:m-0 lg:mx-3;
 }
 .Item-2 {
-  @apply mt-4;
+  @apply mt-4 lg:m-0 lg:mx-3;
 }
 .Item-3 {
-  @apply mt-4 mb-3;
+  @apply mt-4 mb-3 lg:m-0 lg:mx-3;
 }
 .webservices {
   @apply justify-center items-center;
 }
 .webservices > h1 {
-  @apply pt-2  font-mono uppercase text-3xl text-orange-600;
+  @apply pt-2  font-mono uppercase text-3xl text-indigo-700;
 }
 .webservices > h1 > i {
   @apply px-2;
@@ -76,30 +85,30 @@ body {
   @apply px-9 font-mono  pt-2 text-sm text-gray-600;
 }
 .span {
-  @apply border-t-2 border-forst-yellow pt-1;
+  @apply border-t-2 border-indigo-900 pt-1;
 }
 /* card */
 .cardflex {
-  @apply flex justify-center items-center flex-col;
+  @apply flex justify-center items-center flex-col md:flex-row;
 }
 .cardSection {
-  @apply w-96 bg-white mt-5 items-center text-center rounded-xl;
+  @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:justify-between;
 }
 .img > img {
   @apply w-full h-60 rounded-t-xl  aspect-video;
 }
 .textArea > h1 {
-  @apply py-3 text-3xl font-mono text-orange-600;
+  @apply py-3 text-3xl font-mono text-indigo-600;
 }
 .textArea > p {
   @apply pb-5 font-sans text-sm text-gray-500 px-4;
 }
 .display {
-  @apply w-full h-20 bg-orange-600 rounded-b-xl flex
+  @apply w-full h-20 bg-indigo-700 rounded-b-xl flex
   items-center justify-between px-7 uppercase;
 }
 .display > div {
-  @apply border-l-2 border-black;
+  @apply  border-black;
 }
 .display > div > h1 {
   @apply text-xl text-white font-sans font-medium;
@@ -116,29 +125,28 @@ body {
 /* card end */
 /* contact */
 .contactflex {
-  @apply bg-indigo-700 text-gray-200 px-5 py-5 relative overflow-hidden;
+  @apply bg-indigo-500 text-gray-50 px-5 py-5 relative overflow-hidden;
 }
 .circle {
-  @apply w-64 h-64 bg-forst-yellow rounded-full  absolute z-10;
+  @apply w-64 h-64 bg-indigo-800 rounded-full  absolute z-10;
 }
 .Top {
   @apply -right-32 -top-32;
 }
 .Bottom {
-  @apply -left-32 -bottom-32 bg-forst-green;
+  @apply -left-32 -bottom-32;
 }
 .stats {
-  @apply uppercase text-center text-5xl z-20 relative text-forst-white;
+  @apply uppercase text-center text-5xl z-20 relative;
 }
 .ring-3 {
-  @apply hover:outline-none focus:outline-none focus:ring-4 focus:ring-forst-green;
+  @apply border-slate-200 placeholder-black contrast-more:border-slate-400 contrast-more:placeholder-black text-black placeholder:text-center w-full;
 }
 .input {
-  @apply w-full h-10 rounded-b-xl
-   placeholder:text-center bg-gray-100 placeholder:text-gray-400 text-black p-7 shadow-xl shadow-red-700;
+  @apply  h-10 rounded-b-xl bg-gray-100  p-7 shadow-md shadow-indigo-500 ;
 }
 .formtextArea {
-  @apply w-full rounded-sm placeholder:text-center bg-gray-100 placeholder:text-gray-400 placeholder:items-center;
+  @apply  rounded-sm  px-7 py-2 ;
 }
 .form {
   @apply z-20 relative text-center;
@@ -147,15 +155,15 @@ body {
   @apply my-10;
 }
 .form > div > h1 {
-  @apply text-xl bg-forst-orange rounded-t-xl py-3;
+  @apply text-xl bg-indigo-800 rounded-t-xl py-3;
 }
 .form > button {
-  @apply uppercase bg-forst-orange hover:bg-orange-400 w-full h-10 my-5;
+  @apply uppercase bg-indigo-900 hover:bg-orange-400 w-full h-10 my-3;
 }
 /* contactEnd */
 /* Footer */
 .footerflex {
-  @apply bg-gradient-to-tr from-[#fe7557]/90 via-[#fd4e27]/90 to-[#fd3a0f]/90;
+  @apply bg-indigo-900;
 }
 .footerCenterSection {
   @apply flex text-center w-full justify-center font-mono text-4xl py-5;
@@ -173,12 +181,12 @@ body {
   @apply justify-end text-center w-fit h-fit overflow-hidden text-xl font-mono px-5;
 }
 .footerNavRight > p {
-  @apply text-xs px-3;
+  @apply text-xs px-3 leading-loose text-gray-300;
 }
 /* Copyright */
 .copyright {
-  @apply text-center bg-slate-700 text-white text-xs py-2;
+  @apply text-center bg-indigo-500 text-white text-xs py-2;
 }
 .black {
-  @apply bg-black h-10;
+  @apply bg-white h-10;
 }
