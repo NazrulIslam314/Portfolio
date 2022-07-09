@@ -89,10 +89,10 @@ body {
 }
 /* card */
 .cardflex {
-  @apply flex justify-center items-center flex-col md:flex-row;
+  @apply flex justify-center items-center flex-col md:flex-row md:flex-wrap;
 }
 .cardSection {
-  @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:justify-between;
+  @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:mx-5 md:w-80 lg:w-96;
 }
 .img > img {
   @apply w-full h-60 rounded-t-xl  aspect-video;

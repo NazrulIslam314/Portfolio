@@ -856,6 +856,7 @@ body {
 @media (min-width: 768px) {
   .cardflex {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -871,8 +872,16 @@ body {
 
 @media (min-width: 768px) {
   .cardSection {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     margin-bottom: 0px;
-    justify-content: space-between;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardSection {
+    width: 24rem;
   }
 }
 
