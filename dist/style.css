@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -980,11 +980,11 @@ body {
 .circle {
   position: absolute;
   z-index: 10;
-  height: 16rem;
-  width: 16rem;
+  height: 24rem;
+  width: 24rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(55 48 163 / var(--tw-bg-opacity));
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
 }
 
 .Top {
@@ -1104,13 +1104,13 @@ body {
   height: 2.5rem;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
   text-transform: uppercase;
 }
 
 .form > button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
 /* contactEnd */
