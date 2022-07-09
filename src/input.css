@@ -6,7 +6,7 @@ html {
   @apply scroll-smooth;
 }
 body {
-  @apply bg-gray-100;
+  @apply bg-gray-200 text-gray-50
 }
 .heading {
   @apply text-center text-4xl text-gray-50 py-5
@@ -14,7 +14,7 @@ body {
 }
 /* nav-Section-Start */
 .navSection {
-  @apply bg-orange-500 flex flex-wrap text-forst-drak-red;
+  @apply bg-orange-500 flex flex-wrap;
 }
 .navLeftSection {
   @apply text-2xl p-2 mr-4 inline-flex items-center;
@@ -26,7 +26,7 @@ body {
   @apply hidden;
 }
 .navItem {
-  @apply text-slate-800 w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
+  @apply  w-full px-3 py-2 rounded  items-center justify-center inline-block font-mono;
 }
 /* nav-Section-End */
 /* Hero-Section-start */
@@ -34,10 +34,13 @@ body {
   @apply bg-gradient-to-r from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
 }
 .center {
-  @apply flex h-80screen items-center justify-center text-center;
+  @apply flex h-80screen items-center justify-center text-center relative z-20
+}
+.heroCenter{
+  @apply relative z-20
 }
 .heroCenter > h1 {
-  @apply text-forst-white text-4xl font-mono uppercase font-medium;
+  @apply text-forst-white text-4xl font-mono uppercase font-medium 
 }
 .heroCenter > p {
   @apply text-forst-yellow-50 text-sm;
@@ -45,11 +48,11 @@ body {
 /* Hero-Section-End */
 /* 1st-Section-Start*/
 .flexBox {
-  @apply flex flex-col px-5 bg-gray-300;
+  @apply flex flex-col px-5;
 }
 
 .flexItem {
-  @apply py-8 bg-gray-200 rounded-xl justify-center items-center text-center;
+  @apply py-8 bg-white/50 rounded-xl justify-center items-center text-center;
 }
 .Item-1 {
   @apply mt-3;
@@ -75,28 +78,15 @@ body {
 .span {
   @apply border-t-2 border-forst-yellow pt-1;
 }
-/*skill*/
-.html {
-  @apply bg-forst-yellow flex justify-center;
-}
-.htmlIcon {
-  @apply text-4xl;
-}
-.htmlBar {
-  @apply w-4/5 border-t-8 border-forst-green mt-3;
-}
-.htmlText {
-  @apply text-xl mt-3;
-}
 /* card */
 .cardflex {
   @apply flex justify-center items-center flex-col;
 }
 .cardSection {
-  @apply w-96 bg-gray-200 mt-5 items-center text-center rounded-xl;
+  @apply w-96 bg-white mt-5 items-center text-center rounded-xl;
 }
 .img > img {
-  @apply w-full h-60 rounded-t-xl p-1 aspect-video;
+  @apply w-full h-60 rounded-t-xl  aspect-video;
 }
 .textArea > h1 {
   @apply py-3 text-3xl font-mono text-orange-600;
@@ -107,6 +97,9 @@ body {
 .display {
   @apply w-full h-20 bg-orange-600 rounded-b-xl flex
   items-center justify-between px-7 uppercase;
+}
+.display>div {
+  @apply border-l-2 border-black
 }
 .display > div > h1 {
   @apply text-xl text-white font-sans font-medium;
@@ -123,26 +116,46 @@ body {
 /* card end */
 /* contact */
 .contactflex {
-  @apply bg-indigo-600 text-gray-200 px-5 py-10
+  @apply bg-indigo-700 text-gray-200 px-5 py-5 relative overflow-hidden
+}
+.circle{
+  @apply w-64 h-64 bg-forst-yellow rounded-full  absolute z-10
+}
+.Top{
+  @apply -right-32 -top-32
+}
+.Bottom{
+  @apply -left-32 -bottom-32 bg-forst-green
+}
+.stats{
+  @apply uppercase text-center text-5xl z-20 relative text-forst-white
+} 
+.ring-3{
+  @apply  hover:outline-none focus:outline-none focus:ring-4 focus:ring-forst-green
 }
 .input {
-  @apply w-full h-10 rounded-sm
-   placeholder:text-center bg-gray-100 placeholder:text-gray-400
+  @apply w-full h-10 rounded-b-xl
+   placeholder:text-center bg-gray-100 placeholder:text-gray-400 text-black p-7 shadow-xl shadow-red-700
 }
-.textArea{
-  @apply w-full rounded-sm
-  placeholder:text-center bg-gray-100 placeholder:text-gray-400
+.formtextArea{
+  @apply w-full rounded-sm placeholder:text-center bg-gray-100 placeholder:text-gray-400 placeholder:items-center 
+}
+.form{
+  @apply z-20 relative text-center
+}
+.form >div{
+  @apply  my-10 
 }
 .form > div > h1{
-  @apply text-xl 
+  @apply text-xl bg-forst-orange rounded-t-xl py-3
 }
 .form > button {
-  @apply bg-orange-700 hover:bg-orange-400 w-full h-10 my-5
+  @apply uppercase bg-forst-orange hover:bg-orange-400 w-full h-10 my-5
 }
 /* contactEnd */
 /* Footer */
 .footerflex {
-  @apply bg-gradient-to-tr from-[#fe7557] via-[#fd4e27] to-[#fd3a0f];
+  @apply bg-gradient-to-tr from-[#fe7557]/90 via-[#fd4e27]/90 to-[#fd3a0f]/90 ;
 }
 .footerCenterSection {
   @apply flex text-center w-full justify-center font-mono text-4xl py-5;
@@ -151,21 +164,21 @@ body {
   @apply justify-start text-center;
 }
 .footerNavLeft > h1 {
-  @apply text-2xl;
+  @apply text-xl;
 }
 .footerNavLeft > a {
-  @apply m-0 p-2 text-xl text-center;
+  @apply m-0 p-2 text-sm text-center;
 }
 .footerNavRight {
-  @apply justify-end text-center;
+  @apply justify-end text-center w-fit h-fit overflow-hidden text-xl font-mono px-5;
 }
-.footerNavRight {
-  @apply w-fit h-fit overflow-hidden;
-}
-.footerNavRight {
-  @apply text-xl font-mono text-gray-700;
+.footerNavRight>p{
+  @apply text-xs px-3 
 }
 /* Copyright */
-.copyright {
-  @apply text-center bg-slate-700 text-white;
+.copyright{
+  @apply text-center bg-slate-700 text-white text-xs py-2;
+}
+.black{
+ @apply bg-black h-10
 }

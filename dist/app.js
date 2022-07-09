@@ -8,4 +8,10 @@ $(document).ready(function () {
       });
     });
   });
-  
+ const sentBtn = document.getElementById("sent");
+ const showArea = document.getElementById("showArea");
+ sentBtn.addEventListener("click", myFunction);
+
+function myFunction() {
+  showArea.innerHTML = ("sent Success 🏅");
+}
