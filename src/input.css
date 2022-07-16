@@ -35,7 +35,10 @@ body {
   @apply w-full items-start flex flex-col lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center  lg:h-auto;
 }
 .navItem {
-  @apply w-full px-3 py-2 rounded items-center justify-center hover:bg-indigo-900 hover:text-white lg:inline-flex lg:w-auto;
+  @apply w-full px-3 py-2 rounded items-center justify-between  lg:inline-flex lg:w-auto;
+}
+.navItem:hover{
+  @apply hover:border-b-[1px]  border-white hover:bg-indigo-900 hover:text-white
 }
 /* nav-Section-End */
 /* Hero-Section-start */
