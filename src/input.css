@@ -94,19 +94,6 @@ body {
 .cardSection {
   @apply w-96 bg-white mt-5 items-center text-center rounded-xl md:mb-0 md:mx-5 md:w-80 lg:w-96 transition-all duration-500 ;
 }
-.cardItem-1{
-  @apply lg:m-0 lg:mx-20  lg:hover:-translate-y-10 lg:z-50 lg:hover:z-50 lg:hover:scale-105
-  xl:-translate-x-1/4
-}
-.cardItem-2{
-  @apply lg:mt-0 lg:absolute lg:translate-x-1/2 lg:hover:-translate-y-10 lg:z-40 lg:hover:z-50 lg:hover:scale-105
-  xl:translate-x-1/4 
-}
-.cardItem-3{
-  @apply lg:mx-96  lg:mt-0 lg:absolute lg:translate-x-1/2 lg:hover:-translate-y-10 lg:z-30 
-  hover:lg:z-40  lg:hover:scale-105
-  xl:-translate-x-1/2
-}
 .img > img {
   @apply w-full h-60  rounded-t-xl  aspect-video;
 }
@@ -138,10 +125,10 @@ body {
 /* card end */
 /* contact */
 .contactSection{
-  @apply mt-5
+  @apply mt-5 bg-indigo-500
 }
 .contactflex {
-  @apply bg-indigo-500 text-gray-50 px-5 pt-5 relative overflow-hidden md:px-0;
+  @apply  text-gray-50 px-5 pt-5 relative overflow-hidden md:px-0;
 }
 .circle {
   @apply w-96 h-96 bg-indigo-900 rounded-full  absolute z-10;
@@ -178,7 +165,7 @@ body {
 }
 /* contactEnd */
 /* Footer */
-.footerflex {
+.footerSection {
   @apply bg-indigo-900;
 }
 .footerCenterSection {
@@ -205,4 +192,7 @@ body {
 }
 .black {
   @apply bg-white h-10;
+}
+.show{
+  @apply inline-block ease-in duration-1000 transition-all
 }
